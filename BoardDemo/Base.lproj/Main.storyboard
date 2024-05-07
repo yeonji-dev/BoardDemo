@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8b6-0b-Vh9">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--잔망루피-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BoardDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="fkq-na-KAX">
+                                <rect key="frame" x="0.0" y="47" width="393" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rKj-Zd-wR3">
+                                <rect key="frame" x="117" y="351" width="158" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES" link="YES"/>
+                                </accessibility>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="Image" imagePlacement="top"/>
+                                <connections>
+                                    <action selector="onTouchUpInsideBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="S59-NZ-MLy"/>
+                                    <segue destination="Kbc-Eq-Xnx" kind="show" id="Otx-gm-XKM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="잔망루피" id="UpE-Jr-rfZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="249.61832061068702" y="84.507042253521135"/>
+        </scene>
+        <!--잔망루피-->
+        <scene sceneID="kNN-Av-5HL">
+            <objects>
+                <viewController id="Kbc-Eq-Xnx" customClass="BoardViewController" customModule="BoardDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4WZ-eb-ZXt">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="IUg-d8-ZkK"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="루피" id="xkX-dD-sk2"/>
+                    <navigationItem key="navigationItem" title="잔망루피" id="D2m-5f-Fyi"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uY4-Vx-Uh9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1089.3129770992366" y="84.507042253521135"/>
+        </scene>
+        <!--Navigation-->
+        <scene sceneID="8jy-FV-LRt">
+            <objects>
+                <navigationController title="Navigation" automaticallyAdjustsScrollViewInsets="NO" id="7gw-eq-q7X" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="잔망루피" id="FDm-ky-PqP">
+                        <imageReference key="image" image="folder.fill" catalog="system" symbolScale="large"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="XlL-38-VUU">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <navigationBarAppearance key="scrollEdgeAppearance"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="9gy-gE-ctH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c6w-uv-VbX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-677.0992366412213" y="84.507042253521135"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="qY5-Ws-mJs">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="8b6-0b-Vh9" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="oJS-dL-aL6">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="7gw-eq-q7X" kind="relationship" relationship="viewControllers" id="Oin-QO-fGY"/>
+                        <segue destination="0ys-Vs-WU2" kind="relationship" relationship="viewControllers" id="FxN-EP-kGM"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jWC-Kp-eY7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1668" y="85"/>
+        </scene>
+        <!--베니-->
+        <scene sceneID="d7b-en-3Mr">
+            <objects>
+                <viewController id="0ys-Vs-WU2" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NDt-Gc-sgr">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qlR-T9-kdV">
+                                <rect key="frame" x="5" y="241" width="384" height="372"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="Image 2"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="BeC-TJ-9fX"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="베니" image="folder.fill" catalog="system" id="a14-V5-RKS"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G4o-ba-fWA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="250" y="794"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Image" width="138.66667175292969" height="139"/>
+        <image name="Image 2" width="359.33334350585938" height="357.33334350585938"/>
+        <image name="folder.fill" catalog="system" width="128" height="96"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
