@@ -8,10 +8,13 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var boardPageButton: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        self.title = "잔망루피"
         self.navigationController?.navigationBar.scrollEdgeAppearance?.backgroundColor = .black
         self.navigationController?.navigationBar.scrollEdgeAppearance?.titleTextAttributes = [.foregroundColor: UIColor.white]
     }
@@ -24,7 +27,9 @@ class ViewController: UIViewController {
     }
     
     @IBAction func onTouchUpInsideBoard(_ sender:UIButton){
-        print("---------------------------");
+        print("----------------------")
+        
+        
     }
 
 
