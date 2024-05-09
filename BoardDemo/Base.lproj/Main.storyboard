@@ -54,7 +54,6 @@
                         <viewLayoutGuide key="safeArea" id="IUg-d8-ZkK"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="루피" id="xkX-dD-sk2"/>
                     <navigationItem key="navigationItem" title="잔망루피" id="D2m-5f-Fyi"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uY4-Vx-Uh9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -83,34 +82,9 @@
             </objects>
             <point key="canvasLocation" x="-677.0992366412213" y="84.507042253521135"/>
         </scene>
-        <!--베니-->
-        <scene sceneID="d7b-en-3Mr">
-            <objects>
-                <viewController id="0ys-Vs-WU2" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="NDt-Gc-sgr">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qlR-T9-kdV">
-                                <rect key="frame" x="5" y="241" width="384" height="372"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="Image 2"/>
-                            </button>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="BeC-TJ-9fX"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="베니" image="folder.fill" catalog="system" id="a14-V5-RKS"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="G4o-ba-fWA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="250" y="794"/>
-        </scene>
     </scenes>
     <resources>
         <image name="Image" width="138.66667175292969" height="139"/>
-        <image name="Image 2" width="359.33334350585938" height="357.33334350585938"/>
         <image name="folder.fill" catalog="system" width="128" height="96"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

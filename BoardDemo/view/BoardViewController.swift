@@ -40,7 +40,6 @@ class BoardViewController: UIViewController {
 
     func post() {
             var components = URLComponents(string: "https://krem.nremc.re.kr")
-            //아까 복사해둔 서버 주소
             components?.path = "/REST/ADMIN0012"
             
             guard let url = components?.url else { return }
