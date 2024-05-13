@@ -20,10 +20,14 @@ class BoardViewController: UIViewController {
     }
     
     func setUpTableView(){
-        setTableViewDelegate()
+        //tableView의 두가지 주요 프로토콜: UITableViewDelegate, UITableViewDatasource 구현 및 설정 -> 현재 클래스에서 구현
+        tableView.delegate = self
+        tableView.dataSource = self
+
         tableView.rowHeight = 70
         tableView.register(TableViewCell.self, forCellReuseIdentifier: TableViewCell.identifier)
         view.addSubview(tableView)
+        //Auto layout 관련 -> 직접 지정
         tableView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
            tableView.topAnchor.constraint(equalTo: view.topAnchor),
@@ -31,11 +35,6 @@ class BoardViewController: UIViewController {
            tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
            tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor)
         ])
-    }
-    
-    func setTableViewDelegate(){
-        tableView.delegate = self
-        tableView.dataSource = self
     }
 
     func post() {
@@ -51,7 +50,7 @@ class BoardViewController: UIViewController {
             request.setValue("application/json", forHTTPHeaderField: "Content-Type")
             //타임아웃 시간 지정. (5초 이상 걸리면 중지)
             request.timeoutInterval = 5
-//            //Codable 모델 생성
+//            //Codable 모델 생성 -> 일단 지금은 parameter 없음
 //            let bodyModel = User(name: "Gons", job: "iOS")
 //            //Codable 모델을 JSON 인코딩하여 데이터로 만든 후 http 바디에 추가
 //            request.httpBody = try? JSONEncoder().encode(bodyModel)
@@ -92,10 +91,12 @@ class BoardViewController: UIViewController {
 // extension 처리 및 delegate, dataSource 채택
 extension BoardViewController: UITableViewDelegate, UITableViewDataSource {
 
+    //UITableViewDataSource 프로토콜의 필수 메서드: 행의 수 리턴
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return list.count  // <- Cell을 보여줄 갯수
+        return list.count
     }
 
+    // UITableViewDataSource 프로토콜 필수 메서드: 각 행의 셀 구성
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: TableViewCell.identifier,
                                                                for: indexPath) as? TableViewCell else {
@@ -106,9 +107,10 @@ extension BoardViewController: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
+    // UITableViewDelegate 프로토콜 선택적 메서드: 셀 선택 시 동작
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let detailVC = BoardDetailViewController()
-        // 선택된 트렌드 데이터를 상세 뷰 컨트롤러에 전달
+        // 선택된 데이터를 상세 뷰 컨트롤러에 전달 (글번호 등)
         detailVC.trend = list[indexPath.row]
         
         // 뒤로 가기 버튼 타이틀 없애기

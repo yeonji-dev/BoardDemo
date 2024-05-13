@@ -8,7 +8,8 @@
 import UIKit
 import KakaoMapsSDK
 
-class MapViewController: UIViewController, MapControllerDelegate{
+class BaseMapViewController: UIViewController, MapControllerDelegate{
+
     required init?(coder aDecoder: NSCoder) {
         _observerAdded = false
         _auth = false
@@ -106,7 +107,7 @@ class MapViewController: UIViewController, MapControllerDelegate{
         //여기에서 그릴 View(KakaoMap, Roadview)들을 추가한다.
         let defaultPosition: MapPoint = MapPoint(longitude: 127.108678, latitude: 37.402001)
         //지도(KakaoMap)를 그리기 위한 viewInfo를 생성
-        let mapviewInfo: MapviewInfo = MapviewInfo(viewName: "mapview", viewInfoName: "map", defaultPosition: defaultPosition, defaultLevel: 7)
+        let mapviewInfo: MapviewInfo = MapviewInfo(viewName: "mapview", viewInfoName: "map", defaultPosition: defaultPosition, defaultLevel: 12)
 
         //KakaoMap 추가.
         mapController?.addView(mapviewInfo)

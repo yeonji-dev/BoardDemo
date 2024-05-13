@@ -23,7 +23,7 @@
                                 <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </navigationBar>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rKj-Zd-wR3">
-                                <rect key="frame" x="117" y="351" width="158" height="150"/>
+                                <rect key="frame" x="117" y="190" width="158" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" button="YES" link="YES"/>
@@ -32,6 +32,15 @@
                                 <buttonConfiguration key="configuration" style="plain" image="Image" imagePlacement="top"/>
                                 <connections>
                                     <segue destination="Kbc-Eq-Xnx" kind="show" id="JUv-5N-Yjb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9G6-Dg-YfS">
+                                <rect key="frame" x="117" y="457" width="163" height="153"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="Image"/>
+                                <connections>
+                                    <segue destination="yDJ-T6-F3m" kind="show" id="qm2-OQ-3VV"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -59,6 +68,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uY4-Vx-Uh9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1089.3129770992366" y="84.507042253521135"/>
+        </scene>
+        <!--Current Position-->
+        <scene sceneID="fTg-Xy-sb4">
+            <objects>
+                <viewController id="yDJ-T6-F3m" customClass="CurrentPosition" customModule="BoardDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="H7K-eP-Wgf" customClass="KMViewContainer">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="GAK-8G-cKi"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="syl-Qh-elJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Czy-G6-bex" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1119.8473282442749" y="818.30985915492965"/>
         </scene>
         <!--Navigation-->
         <scene sceneID="8jy-FV-LRt">
