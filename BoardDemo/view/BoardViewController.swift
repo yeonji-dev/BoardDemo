@@ -38,7 +38,8 @@ class BoardViewController: UIViewController {
     }
 
     func post() {
-            var components = URLComponents(string: "https://krem.nremc.re.kr")
+        guard let apiUrl = Bundle.main.object(forInfoDictionaryKey: "REST_API_URL") as? String else { return }
+            var components = URLComponents(string: "https://" + apiUrl)
             components?.path = "/REST/ADMIN0012"
             
             guard let url = components?.url else { return }

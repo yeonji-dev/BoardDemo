@@ -98,7 +98,8 @@ class BoardDetailViewController:UIViewController, WKNavigationDelegate{
 
         let param: Parameters = ["bno": bno]
 
-        let req = AF.request("https://krem.nremc.re.kr/REST/ADMIN0011", method: .post, parameters: param, encoding: JSONEncoding.default)
+        guard let apiUrl = Bundle.main.object(forInfoDictionaryKey: "REST_API_URL") as? String else { return }
+        let req = AF.request("https://"+apiUrl+"/REST/ADMIN0011", method: .post, parameters: param, encoding: JSONEncoding.default)
         req.responseDecodable(of: TrendContainer.self) { response in
             switch response.result {
             case .success(let container):

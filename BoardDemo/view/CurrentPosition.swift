@@ -11,8 +11,8 @@ import KakaoMapsSDK
 
 enum Mode: Int {
     case hidden = 0,
-    show,
-    tracking
+    show
+//    tracking
 }
 
 // POI의 기능을 조합하여 현위치마커를 구성하는 예제.
@@ -143,7 +143,7 @@ class CurrentPosition: BaseMapViewController, GuiEventDelegate, CLLocationManage
         ])
         waveEffect.hideAtStop = true
         waveEffect.interpolation = AnimationInterpolation(duration: 1000, method: .cubicOut)
-        waveEffect.playCount = 5
+        waveEffect.playCount = 3
 
         let animator = manager?.addShapeAnimator(animatorID: "circleWave", effect: waveEffect)
         animator?.addPolygonShape(shape!)
@@ -160,6 +160,7 @@ class CurrentPosition: BaseMapViewController, GuiEventDelegate, CLLocationManage
         spriteGui.bgColor = UIColor.clear
         spriteGui.splitLineColor = UIColor.white
         spriteGui.origin = GuiAlignment(vAlign: .bottom, hAlign: .right)
+        spriteGui.position = CGPoint(x: 20, y: 40)
 
         let button = GuiButton("CPB")
         button.image = UIImage(named: "track_location_btn.png")
@@ -187,16 +188,16 @@ class CurrentPosition: BaseMapViewController, GuiEventDelegate, CLLocationManage
                 _moveOnce = true
                 break;
             case .show:
-                _mode = .tracking   //현위치마커 추적모드
-                button.image = UIImage(named: "track_location_btn_compass_on.png")
-                let mapView = mapController?.getView("mapview") as! KakaoMap
-                let trackingManager = mapView.getTrackingManager()
-                trackingManager.startTrackingPoi(_currentDirectionArrowPoi!)
-                trackingManager.isTrackingRoll = true
-                _currentDirectionArrowPoi?.hide()
-                _currentDirectionPoi?.show()
-                break;
-            case .tracking:
+//                _mode = .tracking   //현위치마커 추적모드
+//                button.image = UIImage(named: "track_location_btn_compass_on.png")
+//                let mapView = mapController?.getView("mapview") as! KakaoMap
+//                let trackingManager = mapView.getTrackingManager()
+//                trackingManager.startTrackingPoi(_currentDirectionArrowPoi!)
+//                trackingManager.isTrackingRoll = true
+//                _currentDirectionArrowPoi?.hide()
+//                _currentDirectionPoi?.show()
+//                break;
+//            case .tracking:
                 _mode = .hidden     //현위치마커 숨김
                 button.image = UIImage(named: "track_location_btn.png")
                 _timer?.invalidate()
@@ -204,6 +205,7 @@ class CurrentPosition: BaseMapViewController, GuiEventDelegate, CLLocationManage
                 stopUpdateLocation()
                 _currentPositionPoi?.hide()
                 _currentDirectionPoi?.hide()
+            _currentDirectionArrowPoi?.hide()
                 let mapView = mapController?.getView("mapview") as! KakaoMap
                 let trackingManager = mapView.getTrackingManager()
                 trackingManager.stopTracking()
@@ -243,7 +245,7 @@ class CurrentPosition: BaseMapViewController, GuiEventDelegate, CLLocationManage
 
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
         _locationServiceAuthorized = status
-        if _locationServiceAuthorized == .authorizedWhenInUse && (_mode == .show || _mode == .tracking) {
+        if _locationServiceAuthorized == .authorizedWhenInUse && (_mode == .show ) {
             _locationManager.startUpdatingLocation()
             _locationManager.startUpdatingHeading()
         }
@@ -252,11 +254,6 @@ class CurrentPosition: BaseMapViewController, GuiEventDelegate, CLLocationManage
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         _currentPosition.longitude = locations[0].coordinate.longitude
         _currentPosition.latitude = locations[0].coordinate.latitude
-
-        if let location = locations.first {
-                print("위도: \(location.coordinate.latitude)")
-                print("경도: \(location.coordinate.longitude)")
-            }
 
 //        let mapView: KakaoMap? = mapController?.getView("mapview") as? KakaoMap
 //        let manager = mapView?.getMapMovablePoiManager()

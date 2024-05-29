@@ -69,10 +69,10 @@
             </objects>
             <point key="canvasLocation" x="1089.3129770992366" y="84.507042253521135"/>
         </scene>
-        <!--Current Position-->
+        <!--SimplePOI-->
         <scene sceneID="fTg-Xy-sb4">
             <objects>
-                <viewController id="yDJ-T6-F3m" customClass="CurrentPosition" customModule="BoardDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="yDJ-T6-F3m" customClass="SimplePOI" customModule="BoardDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="H7K-eP-Wgf" customClass="KMViewContainer">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

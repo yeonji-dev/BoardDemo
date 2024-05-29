@@ -19,6 +19,7 @@
 		925A7FB62BF22B4800740EB4 /* track_location_btn_compass_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 925A7FB12BF22B4800740EB4 /* track_location_btn_compass_on.png */; };
 		925A7FB72BF22B4800740EB4 /* track_location_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 925A7FB22BF22B4800740EB4 /* track_location_btn.png */; };
 		929250422BF1EB7B002BCB3D /* KakaoMapsSDK-SPM in Frameworks */ = {isa = PBXBuildFile; productRef = 929250412BF1EB7B002BCB3D /* KakaoMapsSDK-SPM */; };
+		9297879A2BFAF32D00C0519A /* PharmData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929787992BFAF32D00C0519A /* PharmData.swift */; };
 		92B223982BE9FEC50095D1E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B223972BE9FEC50095D1E1 /* AppDelegate.swift */; };
 		92B2239A2BE9FEC50095D1E1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B223992BE9FEC50095D1E1 /* SceneDelegate.swift */; };
 		92B2239C2BE9FEC50095D1E1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B2239B2BE9FEC50095D1E1 /* ViewController.swift */; };
@@ -29,6 +30,14 @@
 		92B223AF2BEA3AFD0095D1E1 /* Trend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B223AE2BEA3AFD0095D1E1 /* Trend.swift */; };
 		92B223B22BEB43D20095D1E1 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B223B12BEB43D20095D1E1 /* TableViewCell.swift */; };
 		92B223B62BEB9C6F0095D1E1 /* BoardDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B223B52BEB9C6F0095D1E1 /* BoardDetailViewController.swift */; };
+		92D1B3F62BFB6222008D2A4E /* pin_green.png in Resources */ = {isa = PBXBuildFile; fileRef = 92D1B3F52BFB6222008D2A4E /* pin_green.png */; };
+		92DDB0512BFED711006A9100 /* MedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DDB0502BFED711006A9100 /* MedData.swift */; };
+		92DDB0532BFEDE11006A9100 /* local_hospital_40.png in Resources */ = {isa = PBXBuildFile; fileRef = 92DDB0522BFEDE11006A9100 /* local_hospital_40.png */; };
+		92DDB0552BFEE245006A9100 /* local_hospital_20.png in Resources */ = {isa = PBXBuildFile; fileRef = 92DDB0542BFEE244006A9100 /* local_hospital_20.png */; };
+		92DDB0572BFEE2C3006A9100 /* local_hospital_16.png in Resources */ = {isa = PBXBuildFile; fileRef = 92DDB0562BFEE2C3006A9100 /* local_hospital_16.png */; };
+		92DDB0592BFEE33D006A9100 /* pill_16.png in Resources */ = {isa = PBXBuildFile; fileRef = 92DDB0582BFEE33D006A9100 /* pill_16.png */; };
+		92DDB05C2BFF1646006A9100 /* MedService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DDB05B2BFF1646006A9100 /* MedService.swift */; };
+		92DDB05E2BFF16EF006A9100 /* PharmService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DDB05D2BFF16EF006A9100 /* PharmService.swift */; };
 		F247DC3CFD809DB03227430D /* Pods_BoardDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97BD783BFD02BD41C6754B31 /* Pods_BoardDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +54,7 @@
 		925A7FB12BF22B4800740EB4 /* track_location_btn_compass_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = track_location_btn_compass_on.png; path = "../../../../ios_study/KakaoMapsSDK-Sample/KakaoMapsSDK-Sample/Resources/track_location_btn_compass_on.png"; sourceTree = "<group>"; };
 		925A7FB22BF22B4800740EB4 /* track_location_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = track_location_btn.png; path = "../../../../ios_study/KakaoMapsSDK-Sample/KakaoMapsSDK-Sample/Resources/track_location_btn.png"; sourceTree = "<group>"; };
 		929250432BF1F7FE002BCB3D /* env.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = env.xcconfig; sourceTree = "<group>"; };
+		929787992BFAF32D00C0519A /* PharmData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PharmData.swift; sourceTree = "<group>"; };
 		92B223942BE9FEC50095D1E1 /* BoardDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoardDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92B223972BE9FEC50095D1E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92B223992BE9FEC50095D1E1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +67,14 @@
 		92B223AE2BEA3AFD0095D1E1 /* Trend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trend.swift; sourceTree = "<group>"; };
 		92B223B12BEB43D20095D1E1 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		92B223B52BEB9C6F0095D1E1 /* BoardDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardDetailViewController.swift; sourceTree = "<group>"; };
+		92D1B3F52BFB6222008D2A4E /* pin_green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pin_green.png; path = "../../../../ios_study/KakaoMapsSDK-Sample/KakaoMapsSDK-Sample/Resources/pin_green.png"; sourceTree = "<group>"; };
+		92DDB0502BFED711006A9100 /* MedData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedData.swift; sourceTree = "<group>"; };
+		92DDB0522BFEDE11006A9100 /* local_hospital_40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = local_hospital_40.png; path = ../../../../ios_study/local_hospital_40.png; sourceTree = "<group>"; };
+		92DDB0542BFEE244006A9100 /* local_hospital_20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = local_hospital_20.png; path = ../../../../ios_study/local_hospital_20.png; sourceTree = "<group>"; };
+		92DDB0562BFEE2C3006A9100 /* local_hospital_16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = local_hospital_16.png; path = ../../../../ios_study/local_hospital_16.png; sourceTree = "<group>"; };
+		92DDB0582BFEE33D006A9100 /* pill_16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pill_16.png; path = ../../../../ios_study/pill_16.png; sourceTree = "<group>"; };
+		92DDB05B2BFF1646006A9100 /* MedService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedService.swift; sourceTree = "<group>"; };
+		92DDB05D2BFF16EF006A9100 /* PharmService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PharmService.swift; sourceTree = "<group>"; };
 		97BD783BFD02BD41C6754B31 /* Pods_BoardDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BoardDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB6B6C2452131EE2C621C65B /* Pods-BoardDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoardDemo.debug.xcconfig"; path = "Target Support Files/Pods-BoardDemo/Pods-BoardDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		C16E71A95909DA71390E7650 /* Pods-BoardDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoardDemo.release.xcconfig"; path = "Target Support Files/Pods-BoardDemo/Pods-BoardDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -87,6 +105,11 @@
 		925A7FA72BF21AB800740EB4 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				92DDB0582BFEE33D006A9100 /* pill_16.png */,
+				92DDB0562BFEE2C3006A9100 /* local_hospital_16.png */,
+				92DDB0542BFEE244006A9100 /* local_hospital_20.png */,
+				92DDB0522BFEDE11006A9100 /* local_hospital_40.png */,
+				92D1B3F52BFB6222008D2A4E /* pin_green.png */,
 				925A7FAE2BF22B4800740EB4 /* map_ico_direction_area.png */,
 				925A7FB02BF22B4800740EB4 /* map_ico_marker_direction.png */,
 				925A7FB12BF22B4800740EB4 /* track_location_btn_compass_on.png */,
@@ -120,6 +143,7 @@
 		92B223962BE9FEC50095D1E1 /* BoardDemo */ = {
 			isa = PBXGroup;
 			children = (
+				92DDB05A2BFF162C006A9100 /* service */,
 				925A7FA72BF21AB800740EB4 /* Resource */,
 				92B223B02BEB439F0095D1E1 /* view */,
 				92B223AD2BEA3A530095D1E1 /* model */,
@@ -136,7 +160,9 @@
 		92B223AD2BEA3A530095D1E1 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				929787992BFAF32D00C0519A /* PharmData.swift */,
 				92B223AE2BEA3AFD0095D1E1 /* Trend.swift */,
+				92DDB0502BFED711006A9100 /* MedData.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -154,6 +180,15 @@
 				925A7FAA2BF22A0700740EB4 /* CurrentPosition.swift */,
 			);
 			path = view;
+			sourceTree = "<group>";
+		};
+		92DDB05A2BFF162C006A9100 /* service */ = {
+			isa = PBXGroup;
+			children = (
+				92DDB05B2BFF1646006A9100 /* MedService.swift */,
+				92DDB05D2BFF16EF006A9100 /* PharmService.swift */,
+			);
+			path = service;
 			sourceTree = "<group>";
 		};
 		9A712AA70D6BE00770C9B20A /* Frameworks */ = {
@@ -231,13 +266,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				925A7FB52BF22B4800740EB4 /* map_ico_marker_direction.png in Resources */,
+				92DDB0552BFEE245006A9100 /* local_hospital_20.png in Resources */,
 				92B223A42BE9FEC80095D1E1 /* LaunchScreen.storyboard in Resources */,
 				925A7FAD2BF22AEA00740EB4 /* map_ico_marker.png in Resources */,
+				92DDB0592BFEE33D006A9100 /* pill_16.png in Resources */,
 				925A7FB72BF22B4800740EB4 /* track_location_btn.png in Resources */,
 				92B223A12BE9FEC80095D1E1 /* Assets.xcassets in Resources */,
+				92DDB0532BFEDE11006A9100 /* local_hospital_40.png in Resources */,
 				925A7FB32BF22B4800740EB4 /* map_ico_direction_area.png in Resources */,
+				92DDB0572BFEE2C3006A9100 /* local_hospital_16.png in Resources */,
 				925A7FB42BF22B4800740EB4 /* track_location_btn_pressed.png in Resources */,
 				92B2239F2BE9FEC50095D1E1 /* Main.storyboard in Resources */,
+				92D1B3F62BFB6222008D2A4E /* pin_green.png in Resources */,
 				925A7FA92BF21E1800740EB4 /* mapIcoBookmark_01.png in Resources */,
 				925A7FB62BF22B4800740EB4 /* track_location_btn_compass_on.png in Resources */,
 			);
@@ -293,15 +333,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				925A7FAB2BF22A0700740EB4 /* CurrentPosition.swift in Sources */,
+				92DDB05E2BFF16EF006A9100 /* PharmService.swift in Sources */,
 				92B2239C2BE9FEC50095D1E1 /* ViewController.swift in Sources */,
 				92B223B62BEB9C6F0095D1E1 /* BoardDetailViewController.swift in Sources */,
+				92DDB0512BFED711006A9100 /* MedData.swift in Sources */,
 				92B223982BE9FEC50095D1E1 /* AppDelegate.swift in Sources */,
 				925A7FA42BF217AC00740EB4 /* CameraEventHandler.swift in Sources */,
 				92B223AF2BEA3AFD0095D1E1 /* Trend.swift in Sources */,
+				9297879A2BFAF32D00C0519A /* PharmData.swift in Sources */,
 				92B223B22BEB43D20095D1E1 /* TableViewCell.swift in Sources */,
 				92B2239A2BE9FEC50095D1E1 /* SceneDelegate.swift in Sources */,
 				92B223AC2BEA130F0095D1E1 /* BoardViewController.swift in Sources */,
 				925A7FA62BF219C600740EB4 /* SimplePOI.swift in Sources */,
+				92DDB05C2BFF1646006A9100 /* MedService.swift in Sources */,
 				925A7FA22BF2054400740EB4 /* BaseMapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -457,9 +501,13 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 339R3JTFG2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BoardDemo/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "위치 허용 3";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "위치 허용 2";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "위치 허용 1";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -469,7 +517,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.yeonji.BoardDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -486,8 +534,13 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 339R3JTFG2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BoardDemo/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "위치 허용 3";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "위치 허용 2";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "위치 허용 1";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -497,7 +550,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.yeonji.BoardDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

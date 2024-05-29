@@ -2,19 +2,19 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string>위치 허용 3</string>
-	<key>NSLocationAlwaysUsageDescription</key>
-	<string>위치 허용 2</string>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>위치 허용 1</string>
+	<key>COMMON_API_KEY</key>
+	<string>$(COMMON_API_KEY)</string>
 	<key>KAKAO_APP_KEY</key>
 	<string>$(KAKAO_APP_KEY)</string>
+	<key>MED_API_URL</key>
+	<string>$(MED_API_URL)</string>
 	<key>NSAppTransportSecurity</key>
 	<dict>
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
 	</dict>
+	<key>PHARM_API_URL</key>
+	<string>$(PHARM_API_URL)</string>
 	<key>REST_API_URL</key>
 	<string>$(REST_API_URL)</string>
 	<key>UIApplicationSceneManifest</key>
